@@ -1,0 +1,12 @@
+body {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  background-color: #131314;
+  color: #e6e6e6;
+}
+
+hr {
+  border-color: #252526;
+}

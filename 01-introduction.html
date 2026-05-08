@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cascading Style Sheets</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./styles/introductionStyles.css" />
+  </head>
+
+  <body>
+    <h1>¿Qué es exactamente CSS?</h1>
+    <p>
+      Si HTML se esncarga de definir la estructura del documento e indicarle al
+      navegador que es cada cosa (encabezados, enlaces, imágenes, etc), CSS se
+      encarga de indicarle al navegador como "dibujar" cada uno de esos
+      elementos.
+    </p>
+    <div class="exampleBox">
+      <div>
+        <p><strong>HTML:</strong> Navegador esto es un cuadrado</p>
+        <div class="box"></div>
+      </div>
+      <div>
+        <p>
+          <strong>CSS:</strong> Navegador a este cuadrado dibujale el borde gris
+          y el fondo azul
+        </p>
+        <div class="box blueBox"></div>
+      </div>
+    </div>
+    <p>Con CSS puedes controlar:</p>
+    <ul>
+      <li>
+        <strong>Colores y Tipografías:</strong> Cambiar el tono del texto,
+        fondos y fuentes.
+      </li>
+      <li>
+        <strong>Diseño (Layout):</strong> Decidir dónde va cada caja, crear
+        columnas o rejillas complejas.
+      </li>
+      <li>
+        <strong>Adaptabilidad (Responsive Design):</strong> Hacer que tu sitio
+        se vea perfectamente tanto en un monitor de 30 pulgada como en un
+        celular pequeño.
+      </li>
+      <li>
+        <strong>Efectos:</strong> Añadir sombras, bordes redondeados,
+        transiciones y animaciones.
+      </li>
+    </ul>
+    <hr />
+
+    <h2>La regla de Oro: La Sintaxis</h2>
+    <p>
+      Escribir CSS es como dar instrucciones directas. Cada "regla" se compone
+      de tres partes principales:
+    </p>
+    <ol>
+      <li>
+        <strong>Selector:</strong> Indica a qué elemento le vas a aplicar el
+        estilo (ej: un párrafo &lt;p&gt;).
+      </li>
+      <li><strong>Propiedad:</strong> Qué quieres cambiar (ej: el color)</li>
+      <li><strong>Valor:</strong> El nuevo ajuste (ej: azul)</li>
+    </ol>
+    <pre class="code">Selector {Propiedad: Valor}</pre>
+    <p><strong>Ejemplo real:</strong></p>
+    <pre class="codeBlock">
+      <code>
+        <span class="selector">h1</span> {
+          color: <span class="value">#2ecc71</span>;
+          font-size: <span class="value">32px</span>;
+          text-align: <span class="value">center</span>;
+        }
+      </code>
+    </pre>
+    <hr />
+
+    <h2>¿Por qué se llama "en Cascada" (Cascading)?</h2>
+    <p>"Cascada" significa que el orden importa:</p>
+    <ul>
+      <li>
+        <strong>Jerarquía:</strong> Si tienes dos reglas que chocan,
+        heneralmente la que está escrita ,ás abajo (al final del archivo) gana.
+      </li>
+      <li>
+        <strong>Herencia:</strong> Algunos estilos que le das a un elemento
+        padre (como el cuerpo de la página) los heredan automáticamente sus
+        hijos (como los párrafos), a menos que indiques lo contrario.
+      </li>
+      <li>
+        <strong>Especificidad:</strong> Hay selectores que tienen más "fuerza"
+        que otros (por ejemplo, un ID le gana a una clase).
+      </li>
+    </ul>
+  </body>
+</html>

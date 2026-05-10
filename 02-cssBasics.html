@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inclusion of CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/basics.css" />
+  </head>
+
+  <body>
+    <h1>Conectando estilos con HTML</h1>
+    <p>
+      Existen 3 maneras de incluir CSS en un documento HTML, casa una tiene un
+      propósito y un "momento de gloria" diferente.
+    </p>
+
+    <h2>1. Inline CSS (Estilos en línea)</h2>
+    <p>
+      Es la forma mas directa, pero también la menos recomendada para proyectos
+      grandes. El estilo se escribe directamente dentro de la etiqueta HTML
+      usando el atributo <code class="code">style</code>.
+    </p>
+    <ul>
+      <li>
+        <p>
+          <strong>Cómo se ve:</strong>
+          <code class="code">
+            &lt;p style="color:red; font-size: 18px;"&gt;Este es un texto
+            rojo.&lt;/p&gt;
+          </code>
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Cuándo usarlo:</strong>
+          Para pruebas rápidas o cuando necesitas aplicar un estilo único a un
+          solo elemento que no se repetirá jamás.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Desventaja:</strong> Mezcla el contenido con el diseño, lo que
+          hace que el código sea difícil de mantener y leer.
+        </p>
+      </li>
+    </ul>
+    <hr />
+
+    <h2>2. Internal CSS (CSS Interno)</h2>
+    <p>
+      Aquí los estilos se agrupan en una sección dedicada dentro del mismo
+      archivo HTML. Se utiliza la etiqueta
+      <code class="code">&lt;style&gt;</code> dentro del
+      <code class="code">&lt;head&gt;</code>.
+    </p>
+    <ul>
+      <li>
+        <p><strong>Cómo se ve:</strong></p>
+        <pre class="codeBlock">
+          <code>
+            <span class="selector">&lt;head&gt;</span>
+              <span class="selector">&lt;style&gt;</span>
+                <span class="selector">body</span> {
+                  background-color: <span class="value">white</span>;
+                }
+              <span class="selector">&lt;/style&gt;</span>
+            <span class="selector">&lt;/head&gt;</span>
+          </code>
+        </pre>
+      </li>
+      <li>
+        <p>
+          <strong>Cuándo usarlo:</strong>
+          Cuando trabajas en una sola página (como una "landing Page" sencilla)
+          y no quieres crear archivos adicionales.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Desventaja:</strong> Si tu sitio tiene 10 páginas y quieres
+          cambiar el color de los párrafos, tendrías que editar los 10 archivos
+          uno por uno.
+        </p>
+      </li>
+    </ul>
+    <hr />
+
+    <h2>3. External CSS (CSS Externo)</h2>
+  </body>
+</html>

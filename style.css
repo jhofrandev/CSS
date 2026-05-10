@@ -7,6 +7,10 @@ body {
   color: #e6e6e6;
 }
 
+li + li {
+  margin-top: 0.7rem;
+}
+
 hr {
   border-color: #252526;
 }

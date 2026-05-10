@@ -1,0 +1,18 @@
+.code {
+  background-color: #252526;
+  padding: 0.2rem;
+  border-radius: 0.2rem;
+}
+
+.codeBlock {
+  background-color: #252526;
+  border-radius: 5px;
+}
+
+.codeBlock .selector {
+  color: #ee7a4c;
+}
+
+.codeBlock .value {
+  color: #fad400;
+}

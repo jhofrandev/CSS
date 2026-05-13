@@ -87,5 +87,35 @@
     <hr />
 
     <h2>3. External CSS (CSS Externo)</h2>
+    <p>
+      Esta es la forma profesional y la más organizada. Creas un archivo
+      independiente con extensión <code class="code">.css</code> y lo vinculas a
+      tu HTML mediante una etiqueta <code class="code">&lt;link&gt;</code>.
+    </p>
+    <ul>
+      <li>Cómo se ve en el HTML:</li>
+      <pre class="codeBlock">
+        <code>
+          <span class="selector">&lt;head&gt;</span>
+            <span class="selector">&lt;link </span> rel=<span class="value">"stylesheet"</span> href=<span class="value">"./styles/main.css"</span> <span class="selector">&gt;</span>
+          <span class="selector">&lt;/head&gt;</span>
+        </code>
+      </pre>
+      <li>Cómo se ve el archivo <code class="code">styles.css</code>:</li>
+      <pre class="codeBlock">
+        <code>
+            <span class="selector">p</span> {
+              color: <span class="value">white</span>;
+              font-weight: <span class="value">bold</span>;
+            }
+        </code>
+      </pre>
+      <li>
+        <strong>Ventaja principal:</strong>
+        Puedes controlar el diseño de TODO un sitio web (cientos de páginas)
+        modificando un solo archivo CSS. Es la base de la eficiencia en el
+        diseño web.
+      </li>
+    </ul>
   </body>
 </html>

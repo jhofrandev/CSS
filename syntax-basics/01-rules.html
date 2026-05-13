@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reglas CSS</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./syntaxBasics.css" />
+  </head>
+  <body>
+    <h1>Qué es una regla CSS</h1>
+    <p>
+      Entender la estructura de una regla de CSS es como aprender la gramática
+      de un nuevo idioma; una vez conoces la sintaxism puedes darle cualquier
+      instrucción al navegador.
+    </p>
+
+    <h2>1. La Anatomia de una Regla CSS</h2>
+    <p>
+      Escribir CSS consiste en crear "reglas". Una regla completa es el conjunto
+      de instrucciones que aplicas a un elemento específico.
+    </p>
+    <p>La estructura básica se ve así:</p>
+    <pre class="codeBox">
+      <code>Selector{propiedad:valor;}</code>
+    </pre>
+    <h3>A. El Selector</h3>
+    <p>
+      Es el "quién" de la regla. Indica al navegador a qué elemento del HTML
+      debe aplicarle el estilo.
+    </p>
+    <ul>
+      <li>
+        Ejemplo: <code class="code">p</code> (selecciona todos los párrafos),
+        <code class="code">h1</code> (selecciona los títulos principales) o
+        <code class="code">.mi-clase</code> (selecciona elementos con esa clase
+        específica).
+      </li>
+    </ul>
+    <h3>B. El Bloque de Declaración</h3>
+    <p>
+      Es todo lo que se encuentra entre las <strong>Llaves</strong> {&nbsp;}.
+      Dentro de este bloque puedes poner tantas declaraciones como necesites,
+      siempre separadas por un punto y coma (;).
+    </p>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.codeBox {
+  background-color: #242b3a;
+  color: #e6e6e6;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.code {
+  color: #e6e6e6;
+  background-color: #242b3a;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-family: monospace;
+}

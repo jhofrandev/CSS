@@ -43,5 +43,67 @@
       Dentro de este bloque puedes poner tantas declaraciones como necesites,
       siempre separadas por un punto y coma (;).
     </p>
+    <h3>C. La Declaración</h3>
+    <p>Es la instrucción específica que combina una propiedad y un valor.</p>
+    <ul>
+      <li>
+        <strong>propiedad:</strong> Es el atributo que quieres cambiar (el
+        "que"), como el color, el tamaño de letra o el margen.
+      </li>
+      <li>
+        <strong>Valor:</strong> Es el ajuste específico que eliges (el "cómo"),
+        como <code class="code">blue</code>, <code class="code">16px</code> o
+        <code class="code">center</code>.
+      </li>
+    </ul>
+    <hr />
+
+    <h2>2. Ejemplo Práctico</h2>
+    <p>
+      Imagina que queremos que todos los subtitulos ( h2 ) sean de color rojo y
+      estén centrados. La regla se vería así:
+    </p>
+    <pre class="codeBox">
+      <code>
+        h2 { 
+          color:red; 
+          text-align:center; 
+        }
+      </code>
+    </pre>
+    <ul>
+      <li>
+        <strong>h2</strong>: El selector, indica que aplicaremos esto a todas
+        las etiquetas <code>&lt;h2&gt;</code>.
+      </li>
+      <li>
+        <strong>color:</strong> La propiedad que queremos cambiar (el color del
+        texto).
+      </li>
+      <li><strong>red</strong>: El valor que le asignamos (el color rojo).</li>
+      <li>
+        <strong>text-align:</strong> Otra propiedad (la alineación del texto).
+      </li>
+      <li><strong>center</strong>: Su valor correspondiente (centrado).</li>
+    </ul>
+    <hr />
+
+    <h2>3. La Importancia del Punto y Coma ";" y las "{}"</h2>
+    <ul>
+      <li>
+        <strong>Las Llaves {&nbsp;}:</strong> Delimitan el inicio y el fi de los
+        estilos para ese selector específico.
+      </li>
+      <li>
+        <strong>Los Dos Puntos:</strong> Separan la propiedad del valor para que
+        el navegador sepa dónde termina el nombre del atributo.
+      </li>
+      <li>
+        <strong>El Punto y Coma:</strong> Es crucial. Le indica al navegador que
+        esa declaración ha terminado y que puede pasar a la siguiente, Si lo
+        olvidas, el navegador se confundirá y probablemente ignorará todo el
+        bloque de estilos.
+      </li>
+    </ul>
   </body>
 </html>

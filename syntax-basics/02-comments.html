@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comentarios CSS</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="./syntaxBasics.css" />
+  </head>
+  <body>
+    <h1>Comentarios en CSS</h1>
+    <p>
+      Los comentarios son esa herramienta "invisible" pero vital que te permite
+      hablar contigo mismo (o con otros desarrolladores) dentro del código sin
+      que el navegador se entere.
+    </p>
+
+    <h2>¿Qué es un comentario en CSS?</h2>
+    <p>
+      Un comentario es una nota en tu archivo de estilos que el navegador ignora
+      por completo al renderizar la página. Su función es puramente informativa
+      para los humanos que leen el código,
+    </p>
+    <hr />
+
+    <h2>La Sintaxis</h2>
+    <p>
+      A diferencia de HTML (que usa &lt;!---->) o javascript (que usa //), CSS
+      utiliza una sintaxis única basada en barras y asteriscos:
+    </p>
+    <ul>
+      <li>Apertura: /*</li>
+      <li>Cierre: */</li>
+    </ul>
+    <h3>Ejemplo básico:</h3>
+    <pre class="codeBox">
+      <code>
+        /* Esto es un comentario de una sola línea */
+        /* O también puedes escribirlo en 
+        varias líneas sin problema */
+        h1 { 
+          color:blue; /* Puedes poner comentarios al final de una línea */
+        }
+      </code>
+    </pre>
+    <hr />
+
+    <h2>¿Para qué se utilizan?</h2>
+    <p>
+      Los comentarios son fundamentales para mantener el orden, especialmente
+      cuando tus archivos empienzan a crecer:
+    </p>
+    <ul>
+      <li>
+        <p>
+          <strong>Organizar Secciones:</strong>
+          Puedes dividir tu archivo CSS en bloques lógicos (ej: Encabezado,
+          Navegación, Pie de página).
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Explicar "Porqués":</strong>
+          A veces usas un truco extraño o un valor muy específico para corregir
+          un error. Un comentario explica por qué hiciste eso para que no borres
+          por error en el futuro.
+        </p>
+      </li>
+      <li>
+        <p>
+          <strong>Desactivar Código (Debugging):</strong>
+          Si una regla está rompiendp tu diseño, puedes "comentarla" para
+          desactivarla temporalmente, sin tenet que borrarla.
+        </p>
+      </li>
+    </ul>
+    <h3>Ejemplo de organización:</h3>
+    <pre class="codeBox">
+      <code>
+        /* =========================================
+           HEADER
+           ========================================= */
+        .header {
+          background-color: #333;
+        }
+
+        /* =========================================
+           NAVIGATION
+           ========================================= */
+        .nav {
+          margin-top: 20px;
+        }
+
+        /* Temporalmente desactivado para pruebas:
+        .nav-link {
+          color: green;
+        } 
+        */
+      </code>
+    </pre>
+  </body>
+</html>
